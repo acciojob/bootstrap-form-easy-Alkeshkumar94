@@ -11,38 +11,41 @@
 	<!-- the entire body must be written by student -->
     <script type="text/javascript" src="./script.js">
 </script>
-	<div>
-<form>
-	<h1>Internship Form</h1>
-	<div class="row">
-		<div class="col-4">
-			<label for="first-name-input" class="form-Label">First Name</label>
-	<input id="first-name-input">
-
-	<label for="last-name-input" class="form-Label">Last Name</label>
-	<input id="last-name-input">
-
-	
-	<label for="email-input" class="form-Label">Email Address</label>
-	<input id="email-input" type="email">
+	<form class="borde">
+		<div class="d-flex justify-content-evenly">
 			
-	<label for="college-input" class="form-Label">College</label>
-	<input id="college-input">
-
-	<label for="college-input" class="form-Label">Guardian Name</label>
-	<input id="college-input">
+ <div class="mb-3">
+    <label for="name" class="form-label">First Name</label>
+    <input type="text" class="form-control" id="name" aria-describedby="namespace">
+  </div>
+						
+ <div class="mb-3">
+    <label for="last" class="form-label">LastName </label>
+    <input type="text" class="form-control" id="last" aria-describedby="namespace">
+  </div>
 			
-	<label for="roll-no-input" class="form-Label">Roll No</label>
-	<input id="roll-no-input"><br>
-
-	<input type="checkbox" >Agree to Terms and Conditions		
-
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+  </div>
+			
 		</div>
-	</div>
-	<button type="submit" class="bg-primary text-white">Submit Form</button>
-</form>
 		
-	</div>
+  <div class="mb-3">
+    <label for="coll" class="form-label">College</label>
+    <input type="text" class="form-control" id="coll">
+  </div>
+  <div class="mb-3 ">
+    <label class="form-check-label" for="year">Graduation year</label>
+    <input type="text" id="year">
+	  
+	  <select>
+		 <h3>2020</h3>
+	  </select>
+	  
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
 </body>
 
 </html>
