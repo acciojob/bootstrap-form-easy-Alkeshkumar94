@@ -9,43 +9,48 @@
 
 <body>
 	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
-	<form class="borde">
-		<div class="d-flex justify-content-evenly">
-			
- <div class="mb-3">
-    <label for="name" class="form-label">First Name</label>
-    <input type="text" class="form-control" id="name" aria-describedby="namespace">
-  </div>
-						
- <div class="mb-3">
-    <label for="last" class="form-label">LastName </label>
-    <input type="text" class="form-control" id="last" aria-describedby="namespace">
-  </div>
-			
-  <div class="mb-3">
-    <label for="exampleInputEmail1" class="form-label">Email address</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-  </div>
-			
+	<form style="border-style:groove">
+		<h1>Internship Form</h1>
+		<div style="display:flex">
+			<div>
+				<label for="first-name-input" >First Name</label>
+				<input id="first-name-input" type="text">
+			</div>
+			<div>
+				<label for="last-name-input">Last Name</label>
+				<input id="last-name-input" type="text">
+			</div>
+			<div>
+				<label for="email-input">Email Address</label>
+				<input id="email-input" type="email">
+			</div>
 		</div>
 		
-  <div class="mb-3">
-    <label for="coll" class="form-label">College</label>
-    <input type="text" class="form-control" id="coll">
-  </div>
-  <div class="mb-3 ">
-    <label class="form-check-label" for="year">Graduation year</label>
-    <input type="text" id="year">
-	  
-	  <select>
-		 <h3>2020</h3>
-	  </select>
-	  
-  </div>
-  <button type="submit" class="btn btn-primary">Submit</button>
-</form>
+		<div style="display:flex">
+			<div >
+				<label for="college-input">College</label>
+				<input id="college-input" type="text">
+			</div>
+			
+			<div>
+				<label for="year">Graduation Year</label>
+                  <select id="year" name="year">
+                    <option value="choose">choose...</option>
+                    <option >2020</option>
+                    <option >2021</option>
+                    <option >2022</option>
+                    <option >2023</option>
+                  </select>
+			</div>
+			<div>
+				<label for="roll-no-input">Roll No</label>
+				<input id="roll-no-input"  type="number">
+			</div>
+		</div>
+	</form>
+    <script type="text/javascript" src="./script.js">
+</script>
+	
 </body>
 
 </html>
