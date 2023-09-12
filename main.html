@@ -9,45 +9,54 @@
 
 <body>
 	<!-- the entire body must be written by student -->
-	<form style="border-style:groove">
-		<h1>Internship Form</h1>
-		<div style="display:flex">
-			<div>
-				<label for="first-name-input" >First Name</label>
-				<input id="first-name-input" type="text">
-			</div>
-			<div>
-				<label for="last-name-input">Last Name</label>
-				<input id="last-name-input" type="text">
-			</div>
-			<div>
-				<label for="email-input">Email Address</label>
-				<input id="email-input" type="email">
-			</div>
-		</div>
+	<form >
+		<h1 class="text-center">Internship Form</h1>
+   
+ <div style="display:flex" class="mt-5">
+	  <div class="mb-3 ms-2">
+    <label for="first-name-input" class="form-label">First Name</label>
+    <input type="text" class="form-control" required id="first-name-input">
+  </div> 
 		
-		<div style="display:flex">
-			<div >
-				<label for="college-input">College</label>
-				<input id="college-input" type="text">
-			</div>
-			
-			<div>
-				<label for="year">Graduation Year</label>
-                  <select id="year" name="year">
-                    <option value="choose">choose...</option>
-                    <option >2020</option>
-                    <option >2021</option>
-                    <option >2022</option>
-                    <option >2023</option>
-                  </select>
-			</div>
-			<div>
-				<label for="roll-no-input">Roll No</label>
-				<input id="roll-no-input"  type="number">
-			</div>
-		</div>
-	</form>
+  <div class="mb-3 ms-2">
+	   <label for="Last-name-input" class="form-label">Last Name</label>
+    <input type="text" class="form-control" required id="Last-name-input">
+  </div>
+		
+  <div class="mb-3 ms-2">
+	   <label for="email-input" class="form-label">Email address</label>
+    <input type="email" class="form-control" required id="email-input" aria-describedby="emailHelp">
+  </div>
+ </div>
+<div style="display:flex">
+	  <div class="mb-3 ms-2">
+    <label for="college-input" class="form-label">College</label>
+    <input type="text" class="form-control" required id="college-input">
+  </div> 
+		
+  <div class="mb-3 ms-2 d-flex flex-column" >
+	   <label for="year" class="form-label">Graduation Year</label>
+	  <select style="width:250px;height:40px;border-style:transparent">
+		  <option>choose...</option>
+		  <option>2020</option>
+		  <option>2021</option>
+		  <option>2022</option>
+		  <option>2023</option>
+	  </select>
+  </div>
+		
+  <div class="mb-3 ms-2">
+	   <label for="roll-no-input" class="form-label">Roll No</label>
+    <input type="number" class="form-control" required id="roll-no-input" aria-describedby="emailHelp">
+  </div>
+ </div>
+		
+  <div class="mb-3 form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Agree to terms and conditions</label>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit form</button>
+</form>
     <script type="text/javascript" src="./script.js">
 </script>
 	
